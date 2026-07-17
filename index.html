@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo/robota-logo/rtLogo-solo.png">
+  <link rel="apple-touch-icon" href="/logo/robota-logo/rtLogo-solo.png">
+  <link rel="manifest" href="/logo/robota-logo/rtLogo-solo.png">
+  <title>طراحی و اجرای پروژه‌های نرم‌افزاری، الکترونیکی و هوش مصنوعی | Robota Engineering</title>
+  <meta name="description"
+    content="طراحی و اجرای پروژه‌های نرم‌افزاری، طراحی وب‌سایت، سیستم‌های الکترونیکی، هوش مصنوعی، اتوماسیون صنعتی و مشاوره مهندسی توسط تیم روبوکالا | ارائه راهکارهای تخصصی برای شرکت‌ها، سازمان‌ها و صنایع مختلف.">
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+  <link rel="stylesheet" href="css/effect.css">
+  <link rel="stylesheet" href="css/mobile-fix.css">
+  <link rel="stylesheet" href="css/logo-animation.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+     NAVBAR
+============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="wrap nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-stage">
+          <div class="logo-wrap">
+            <img class="robot-img" src="logo/robota-logo/rtLogo-solo.png" alt="RoboKala logo">
+            <div class="eyelid left"></div>
+            <div class="eyelid right"></div>
+          </div>
+        </div> <span>Robota<span class="logo-sub">بخش همکاری و اعتماد سازی</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks" dir="rtl">
+        <li><a href="#about">شرکت</a></li>
+        <li><a href="#services">خدمات</a></li>
+        <li><a href="#partners">گواهینامه ها</a></li>
+        <li><a href="#process">فرایند انجام</a></li>
+        <li><a href="#team">اعضای تیم</a></li>
+        <!-- <li><a href="#contact">ارتباط با ما</a></li> -->
+      </ul>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-ghost" style="padding:10px 20px;">ارتباط با ما</a>
+        <span id="navRequestSlot" class="request-slot">
+          <span class="request-anchor"></span>
+        </span>
+        <button class="nav-toggle" id="navToggle"><i class="ti ti-menu-2"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+     HERO
+============================================================ -->
+  <header class="hero snap-section" id="hero">
+    <div class="bg-stage">
+      <div class="bg-grid"></div>
+
+      <svg class="bg-traces">
+        <defs>
+          <linearGradient id="traceGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4da3ff" />
+            <stop offset="100%" stop-color="#8b5cf6" />
+          </linearGradient>
+        </defs>
+        <path class="bg-trace-path" d="M 60 120 L 220 120 L 220 260 L 420 260" style="animation-delay:0s" />
+        <path class="bg-trace-path" d="M 900 90 L 780 90 L 780 210 L 620 210" style="animation-delay:-4s" />
+        <path class="bg-trace-path" d="M 140 520 L 140 400 L 340 400" style="animation-delay:-8s" />
+        <path class="bg-trace-path" d="M 1020 460 L 860 460 L 860 560" style="animation-delay:-2s" />
+        <circle class="bg-node-dot" cx="220" cy="120" r="2.5" style="animation-delay:0s" />
+        <circle class="bg-node-dot" cx="420" cy="260" r="2.5" style="animation-delay:-1.2s" />
+        <circle class="bg-node-dot" cx="780" cy="90" r="2.5" style="animation-delay:-2.4s" />
+        <circle class="bg-node-dot" cx="620" cy="210" r="2.5" style="animation-delay:-.6s" />
+        <circle class="bg-node-dot" cx="140" cy="400" r="2.5" style="animation-delay:-1.8s" />
+        <circle class="bg-node-dot" cx="860" cy="460" r="2.5" style="animation-delay:-3s" />
+      </svg>
+
+      <!-- floating icons: gears, chip, circuit-node, robot-face -->
+
+      <div class="bg-icon bg-layer-far bg-anim-b" style="top:8%; left:6%; width:70px; height:70px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+            stroke-linecap="round" />
+          <circle cx="12" cy="12" r="4.4" />
+          <circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none" />
+        </svg>
+      </div>
+
+      <div class="bg-icon bg-layer-mid bg-anim-a bg-purple" style="top:16%; left:82%; width:54px; height:54px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="8" y="8" width="8" height="8" rx="1.4" />
+          <path d="M9 2v3M12 2v3M15 2v3M9 19v3M12 19v3M15 19v3M2 9h3M2 12h3M2 15h3M19 9h3M19 12h3M19 15h3"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class="bg-icon bg-layer-near bg-anim-c bg-cyan" style="top:62%; left:10%; width:44px; height:44px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="2" />
+          <circle cx="4" cy="4" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="20" cy="4" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="4" cy="20" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="20" cy="20" r="1.5" fill="currentColor" stroke="none" />
+          <path d="M12 10 L4 4M12 10 L20 4M12 14 L4 20M12 14 L20 20" />
+        </svg>
+      </div>
+
+      <div class="bg-icon bg-layer-far bg-anim-a" style="top:70%; left:88%; width:64px; height:64px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+            stroke-linecap="round" />
+          <circle cx="12" cy="12" r="4.4" />
+          <circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none" />
+        </svg>
+      </div>
+
+      <div class="bg-icon bg-layer-mid bg-anim-b" style="top:38%; left:46%; width:38px; height:38px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="2" />
+          <circle cx="4" cy="4" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="20" cy="4" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="4" cy="20" r="1.5" fill="currentColor" stroke="none" />
+          <circle cx="20" cy="20" r="1.5" fill="currentColor" stroke="none" />
+          <path d="M12 10 L4 4M12 10 L20 4M12 14 L4 20M12 14 L20 20" />
+        </svg>
+      </div>
+
+      <div class="bg-icon bg-layer-near bg-anim-c bg-purple" style="top:82%; left:44%; width:50px; height:50px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="6" y="7" width="12" height="10" rx="2.2" />
+          <circle cx="9.2" cy="11.4" r="1" fill="currentColor" stroke="none" />
+          <circle cx="14.8" cy="11.4" r="1" fill="currentColor" stroke="none" />
+          <path d="M9 15h6" stroke-linecap="round" />
+          <path d="M9 3.5v3.5M15 3.5v3.5M4 10H2M22 10h-2M4 14H2M22 14h-2" />
+        </svg>
+      </div>
+
+      <div class="bg-icon bg-layer-far bg-anim-b" style="top:50%; left:70%; width:46px; height:46px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="8" y="8" width="8" height="8" rx="1.4" />
+          <path d="M9 2v3M12 2v3M15 2v3M9 19v3M12 19v3M15 19v3M2 9h3M2 12h3M2 15h3M19 9h3M19 12h3M19 15h3"
+            stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class="bg-icon bg-layer-mid bg-anim-a bg-cyan" style="top:6%; left:36%; width:40px; height:40px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+            stroke-linecap="round" />
+          <circle cx="12" cy="12" r="4.4" />
+          <circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none" />
+        </svg>
+      </div>
+      <div class="hero-grid-overlay"></div>
+      <div class="wrap hero-content reveal in">
+        <div class="eyebrow" style="color: white;">Robota-company</div>
+        <h1>همکاری‌های <br><em>ماندگار</em> <br>حاصل تخصص و <span>اعتماد</span></h1>
+        <p>با تکیه بر دانش فنی، تجربه اجرایی و همکاری با سازمان‌های دولتی و شرکت‌های خصوصی، پروژه‌های مهندسی،
+          سامانه‌های
+          الکترونیکی، راهکارهای صنعتی را از مرحله طراحی تا پشتیبانی ارائه می‌کنیم.</p>
+        <div class="hero-cta">
+          <span id="heroRequestSlot" class="request-slot">
+            <span class="request-anchor"></span>
+          </span>
+          <a href="#projects" class="btn btn-ghost">پروژه ها</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+     ABOUT
+============================================================ -->
+  <section class="section-alt snap-section" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="eyebrow">درباره شرکت</div>
+
+          <h2>راهکارهای مهندسی قابل اعتماد، از ایده تا اجرا</h2>
+
+          <p>
+            روبوتا با تکیه بر تخصص در حوزه الکترونیک، اتوماسیون و توسعه وب، راهکارهایی
+            یکپارچه برای صنایع، سازمان‌ها و کسب‌وکارها ارائه می‌دهد. هدف ما طراحی و
+            پیاده‌سازی سیستم‌هایی است که از نظر عملکرد، پایداری و قابلیت توسعه،
+            پاسخگوی نیازهای امروز و آینده باشند.
+          </p>
+
+          <p>
+            از تحلیل نیازمندی‌ها و طراحی تا اجرا، راه‌اندازی و پشتیبانی، در تمام
+            مراحل پروژه کنار مشتری هستیم تا راهکارهایی متناسب با نیاز هر مجموعه
+            ارائه دهیم.
+          </p>
+
+          <div class="about-tags">
+            <span>الکترونیک</span>
+            <span>توسعه وب</span>
+            <span>اتوماسیون</span>
+          </div>
+        </div>
+
+        <div class="about-pillars reveal">
+          <div class="pillar">
+            <div></div>
+            <div>
+              <h4>الکترونیک</h4>
+              <p>
+                طراحی و اجرای سیستم‌های الکترونیکی و اتوماسیون صنعتی با تمرکز بر
+                دقت، پایداری و عملکرد مطمئن در شرایط واقعی.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar">
+            <div></div>
+            <div>
+              <h4>تعهد</h4>
+              <p>
+                در تمام مراحل پروژه، از ایده تا اجرا و پشتیبانی، در کنار شما هستیم و
+                کیفیت راهکار ارائه‌شده را مسئولیت خود می‌دانیم.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar">
+            <div></div>
+            <div>
+              <h4>توسعه وب</h4>
+              <p>
+                طراحی و توسعه وب‌سایت‌های اختصاصی، سامانه‌های تحت وب و پنل‌های مدیریتی
+                با تمرکز بر سرعت، امنیت، تجربه کاربری و قابلیت توسعه.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     SERVICES
+============================================================ -->
+  <section class="section snap-section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">خدمات</div>
+        <h2>قابلیت‌ها در کل چرخه حیات پروژه</h2>
+        <p>از ایده تا تحویل گواهی‌شده، رشته‌های ما دامنه فنی مورد نیاز اکثر پروژه‌ها را پوشش می‌دهند.</p>
+      </div>
+      <div class="grid-4">
+        <div class="service-card panel bracket reveal">
+          <span class="service-index">1</span>
+          <div class="service-icon"><i class="ti ti-cpu-2"></i></div>
+          <h4>طراحی وب‌سایت </h4>
+          <p>طراحی وب‌سایت‌های شرکتی، فروشگاهی، سامانه‌های مدیریتی و پورتال‌های اختصاصی.</p>
+        </div>
+        <div class="service-card panel bracket reveal">
+          <span class="service-index">2</span>
+          <div class="service-icon"><i class="ti ti-settings-automation"></i></div>
+          <h4>هوش مصنوعی و اتوماسیون</h4>
+          <p>پیاده‌سازی راهکارهای هوشمند، پردازش داده و خودکارسازی فرآیندهای سازمانی.</p>
+        </div>
+        <div class="service-card panel bracket reveal">
+          <span class="service-index">3</span>
+          <div class="service-icon"><i class="ti ti-lasso"></i></div>
+          <h4>طراحی سیستم‌های الکترونیکی</h4>
+          <p>طراحی مدارهای الکترونیکی، بردهای تخصصی و راهکارهای سخت‌افزاری متناسب با نیاز پروژه.</p>
+        </div>
+        <div class="service-card panel bracket reveal">
+          <span class="service-index">4</span>
+          <div class="service-icon"><i class="ti ti-search"></i></div>
+          <h4>مشاوره مهندسی</h4>
+          <p>ارائه مشاوره تخصصی در حوزه برق، الکترونیک، نرم‌افزار و انتخاب راهکارهای فنی.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     STATS
+============================================================ -->
+  <section class="metric-cards section">
+    <div class="metric-cards__row">
+
+      <div class="metric-cards__card metric-cards__card--sales">
+        <div class="metric-cards__head">
+          <span class="metric-cards__label">پروژه‌های انجام‌شده</span>
+          <span class="metric-cards__icon"> <i class="ti ti-briefcase stat-icon"></i>
+          </span>
+        </div>
+        <div class="metric-cards__value"><span class="metric-cards__count" data-target="120">0</span>+</div>
+        <div class="metric-cards__bar">
+          <div class="metric-cards__bar-fill" data-fill="100"></div>
+        </div>
+      </div>
+
+      <div class="metric-cards__card metric-cards__card--orders">
+        <div class="metric-cards__head">
+          <span class="metric-cards__label">مشتریان دولتی</span>
+          <span class="metric-cards__icon"> <i class="ti ti-building-bank stat-icon"></i>
+          </span>
+        </div>
+        <div class="metric-cards__value"><span class="metric-cards__count" data-target="24">0</span></div>
+        <div class="metric-cards__bar">
+          <div class="metric-cards__bar-fill" data-fill="100"></div>
+        </div>
+      </div>
+
+      <div class="metric-cards__card metric-cards__card--customers">
+        <div class="metric-cards__head">
+          <span class="metric-cards__label">پروژه های اختصاصی</span>
+          <span class="metric-cards__icon"><i class="ti ti-users"></i></span>
+        </div>
+        <div class="metric-cards__value"><span class="metric-cards__count" data-target="63">0</span></div>
+        <div class="metric-cards__bar">
+          <div class="metric-cards__bar-fill" data-fill="100"></div>
+        </div>
+      </div>
+
+      <div class="metric-cards__card metric-cards__card--products">
+        <div class="metric-cards__head">
+          <span class="metric-cards__label">رضایت مشتری</span>
+          <span class="metric-cards__icon"><i class="ti ti-mood-smile stat-icon"></i></span>
+        </div>
+        <div class="metric-cards__value"><span class="metric-cards__count" data-target="98">0</span>%</div>
+        <div class="metric-cards__bar">
+          <div class="metric-cards__bar-fill" data-fill="90"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+      TIP
+    ==========================================================-->
+  <section class="section-alt" style="padding: 20px;">
+    <h2 class="typing" id="typing"></h2>
+  </section>
+
+  <!-- ============================================================
+     partners
+============================================================ -->
+  <section class="section snap-section" id="partners">
+    <div class="wrap">
+
+      <div class="section-head reveal">
+        <div class="eyebrow">مدارک و همکاری ها</div>
+        <h2>سازمان‌ها و شرکت‌های همکار</h2>
+        <p>مورد اعتماد سازمان‌های دولتی، شرکت‌های خصوصی و مجموعه‌های صنعتی.</p>
+      </div>
+
+      <div class="container-marquee">
+        <div class="logo-item"><img src="logo/Metro-Logo.svg" alt="مترو"></div>
+        <div class="logo-item"><img src="logo/Electricity-Department-Logo-2.svg" alt="برق"></div>
+        <div class="logo-item"><img src="logo/Ab-Fazelat-Logo.svg" alt="آب و فاضلاب"></div>
+        <div class="logo-item"><img src="logo/Electricity-Department-Logo-2.svg" alt="برق"></div>
+        <div class="logo-item"><img src="logo/Iran-Post-Logo.svg" alt="پست ایران"></div>
+        <div class="logo-item"><img src="logo/لوگو-شرکت-ملی-نفت-ایران.svg" alt="نفت ایران"></div>
+        <div class="logo-item"><img src="logo/Electricity-Department-Logo-2.svg" alt="برق"></div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top: 90px;margin-bottom: 50px;text-align: center;">
+        <!-- <div class="eyebrow">مدرك‌ها</div> -->
+        <h2>لوح‌های تقدیر</h2>
+        <!-- <p>بخشی از تقدیرنامه‌ها و افتخارات دریافت‌شده.</p> -->
+      </div>
+
+      <div class="certificate-grid">
+
+        <div class="certificate panel" data-index="01">
+          <span class="certificate__tag">DOC—01</span>
+          <img src="compliment-plaque/(1).jpg" alt="لوح تقدیر ۱">
+          <div class="certificate__zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+              <path d="M11 8v6M8 11h6" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="certificate panel" data-index="02">
+          <span class="certificate__tag">DOC—02</span>
+          <img src="compliment-plaque/(2).jpg" alt="لوح تقدیر ۲">
+          <div class="certificate__zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+              <path d="M11 8v6M8 11h6" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="certificate panel" data-index="03">
+          <span class="certificate__tag">DOC—03</span>
+          <img src="compliment-plaque/(3).jpg" alt="لوح تقدیر ۳">
+          <div class="certificate__zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+              <path d="M11 8v6M8 11h6" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="certificate panel" data-index="04">
+          <span class="certificate__tag">DOC—04</span>
+          <img src="compliment-plaque/(4).jpg" alt="لوح تقدیر ۴">
+          <div class="certificate__zoom">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+              <path d="M11 8v6M8 11h6" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- لایت‌باکس -->
+      <div class="cert-lightbox" id="certLightbox">
+        <button class="cert-lightbox__close" aria-label="بستن">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+        <img src="" alt="" id="certLightboxImg">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+     BUSINESS PROCESS
+============================================================ -->
+  <section class="section-alt snap-section" id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">BUSINESS PROCESS</div>
+        <h2>مراحل همکاری با ما</h2>
+        <p>
+          از اولین ارتباط تا تحویل نهایی و پشتیبانی، تمامی پروژه‌ها بر اساس یک فرآیند
+          مشخص و شفاف مدیریت و اجرا می‌شوند.
+        </p>
+      </div>
+      <div class="stack-list">
+
+        <div class="stack-card" style="--i:1;">
+          <div class="step-number" data-step="01"></div>
+          <div class="stack-content">
+            <h3>ثبت درخواست</h3>
+            <p>دریافت نیازمندی‌ها، بررسی اولیه و آشنایی با اهداف و الزامات پروژه.</p>
+          </div>
+        </div>
+
+        <div class="stack-card" style="--i:2;">
+          <div class="step-number" data-step="02"></div>
+          <div class="stack-content">
+            <h3>بررسی و مشاوره</h3>
+            <p>تحلیل فنی، ارائه راهکارهای مناسب و تعیین بهترین مسیر اجرای پروژه.</p>
+          </div>
+        </div>
+
+        <div class="stack-card" style="--i:3;">
+          <div class="step-number" data-step="03"></div>
+          <div class="stack-content">
+            <h3>طراحی و برنامه‌ریزی</h3>
+            <p>طراحی معماری، زمان‌بندی و آماده‌سازی مستندات فنی مورد نیاز.</p>
+          </div>
+        </div>
+
+        <div class="stack-card" style="--i:4;">
+          <div class="step-number" data-step="04"></div>
+          <div class="stack-content">
+            <h3>اجرا و توسعه</h3>
+            <p>پیاده‌سازی، توسعه نرم‌افزار، طراحی سیستم‌های الکترونیکی و انجام تست‌های لازم.</p>
+          </div>
+        </div>
+
+        <div class="stack-card" style="--i:5;">
+          <div class="step-number" data-step="05"></div>
+          <div class="stack-content">
+            <h3>تحویل پروژه</h3>
+            <p>ارائه نسخه نهایی، آموزش در صورت نیاز و تأیید نهایی توسط کارفرما.</p>
+          </div>
+        </div>
+
+        <div class="stack-card" style="--i:6;">
+          <div class="step-number" data-step="06"></div>
+          <div class="stack-content">
+            <h3>پشتیبانی و توسعه</h3>
+            <p>ارائه خدمات پشتیبانی، نگهداری و توسعه پروژه متناسب با نیازهای آینده.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     TEAM
+============================================================ -->
+  <section class="section" id="team">
+    <div class="wrap">
+
+      <div class="section-head">
+        <div class="eyebrow">TEAM</div>
+
+        <h2>متخصصانی که در کنار شما هستند</h2>
+
+        <p>
+          تیم ما متشکل از متخصصان حوزه نرم‌افزار و مهندسی برق است که با تکیه بر دانش فنی،
+          تجربه و همکاری مؤثر، راهکارهای تخصصی برای سازمان‌ها و کسب‌وکارها ارائه می‌دهند.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <!-- Navigation -->
+        <div class="team-nav" id="nameList">
+
+          <span class="team-nav-indicator" id="indicator"></span>
+
+          <button class="team-nav-item active" data-index="0">
+            دکتر طالبی پورچاری
+            <span class="role-mini">
+              دکترای مهندسی برق – الکترونیک
+            </span>
+          </button>
+
+          <button class="team-nav-item" data-index="1">
+            سینا فیروزیان
+            <span class="role-mini">
+              توسعه‌دهنده نرم‌افزار
+            </span>
+          </button>
+
+          <button class="team-nav-item" data-index="2">
+            مهرشاد قاسمیان
+            <span class="role-mini">
+              توسعه‌دهنده نرم‌افزار
+            </span>
+          </button>
+
+        </div>
+
+        <!-- Cards -->
+        <div class="team-stack" id="cardStack">
+
+          <div class="team-card" data-index="0" data-rank="0">
+
+            <div class="team-body">
+
+              <h4>دکتر طالبی پورچاری</h4>
+
+              <div class="team-role">
+                متخصص مهندسی برق و الکترونیک با سابقه فعالیت در حوزه طراحی سیستم‌های
+                الکترونیکی، مشاوره فنی، پژوهش و اجرای پروژه‌های تخصصی صنعتی و دانشگاهی.
+              </div>
+
+            </div>
+
+            <div class="team-badge">
+              01
+            </div>
+
+          </div>
+
+          <div class="team-card" data-index="1" data-rank="1">
+
+            <div class="team-body">
+
+              <h4>سینا فیروزیان</h4>
+
+              <div class="team-role">
+                توسعه‌دهنده نرم‌افزار با تمرکز بر طراحی سامانه‌های تحت وب،
+                توسعه راهکارهای اختصاصی و مشارکت در اجرای پروژه‌های نرم‌افزاری و سازمانی.
+              </div>
+
+            </div>
+
+            <div class="team-badge">
+              02
+            </div>
+
+          </div>
+
+          <div class="team-card" data-index="2" data-rank="2">
+
+            <div class="team-body">
+
+              <h4>مهرشاد قاسمیان</h4>
+
+              <div class="team-role">
+                توسعه سامانه‌های تحت وب، نرم‌افزارهای اختصاصی و
+                پیاده‌سازی راهکارهای نرم‌افزاری متناسب با نیاز سازمان‌ها.
+              </div>
+
+            </div>
+
+            <div class="team-badge">
+              03
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+     PROJECT REQUEST FORM
+============================================================ -->
+  <section class="section-alt" id="request">
+    <div class="wrap">
+      <div class="form-wrap">
+
+        <div class="form-side">
+          <div class="eyebrow">ثبت درخواست همکاری</div>
+          <h2>همکاری خود را با ما آغاز کنید</h2>
+          <p>
+            اگر برای سازمان، شرکت یا کسب‌وکار خود به راهکارهای نرم‌افزاری، الکترونیکی
+            یا مشاوره تخصصی نیاز دارید، اطلاعات پروژه را برای ما ارسال کنید تا پس از
+            بررسی، کارشناسان ما در کوتاه‌ترین زمان با شما تماس بگیرند.
+          </p>
+          <div class="form-side-list">
+            <div><i class="ti ti-clock"></i>پاسخگویی در کوتاه‌ترین زمان ممکن</div>
+            <div><i class="ti ti-lock"></i>اطلاعات و مستندات پروژه کاملاً محرمانه خواهد بود.</div>
+            <div><i class="ti ti-file-description"></i>بررسی اولیه و مشاوره تخصصی پیش از شروع همکاری</div>
+          </div>
+        </div>
+
+        <!-- ستون چپ: فرم -->
+        <div class="rkms" data-rkms>
+
+          <div class="rkms__steps" data-rkms-track>
+            <div class="rkms__step" data-rkms-step>
+              <span class="rkms__step-dot">1</span>
+              <span class="rkms__step-label">تماس</span>
+            </div>
+            <div class="rkms__connector"></div>
+            <div class="rkms__step" data-rkms-step>
+              <span class="rkms__step-dot">2</span>
+              <span class="rkms__step-label">مشخصات</span>
+            </div>
+            <div class="rkms__connector"></div>
+            <div class="rkms__step" data-rkms-step>
+              <span class="rkms__step-dot">3</span>
+              <span class="rkms__step-label">درخواست</span>
+            </div>
+          </div>
+
+          <form novalidate>
+
+            <!-- مرحله ۱: راه ارتباطی -->
+            <div class="rkms__panel" data-rkms-panel>
+              <h3 class="rkms__panel-title">راه ارتباطی شما</h3>
+
+              <div class="rkms__field">
+                <input type="tel" id="rkms-phone" name="phone" inputmode="numeric" required pattern="09[0-9]{9}"
+                  placeholder=" " data-rkms-digits maxlength="11">
+                <label for="rkms-phone">شماره تماس</label>
+              </div>
+
+              <div class="rkms__field">
+                <input type="email" id="rkms-email" name="email" placeholder=" ">
+                <label for="rkms-email">ایمیل <span class="rkms__optional">(اختیاری)</span></label>
+              </div>
+
+              <div class="rkms__actions">
+                <span></span>
+                <button type="button" class="rkms__btn rkms__btn--primary" data-rkms-next>
+                  بعدی
+                  <i class="ti ti-arrow-left"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- مرحله ۲: مشخصات -->
+            <div class="rkms__panel" data-rkms-panel hidden>
+              <h3 class="rkms__panel-title">مشخصات</h3>
+
+              <div class="rkms__field">
+                <input type="text" id="rkms-company" name="company" required placeholder=" ">
+                <label for="rkms-company">نام شرکت یا سازمان</label>
+                <span class="rkms__hint">اگر شرکت یا سازمانی ندارید، بنویسید: شخصی</span>
+              </div>
+
+              <div class="rkms__field">
+                <input type="text" id="rkms-fullname" name="fullName" required placeholder=" ">
+                <label for="rkms-fullname">نام و نام خانوادگی</label>
+              </div>
+
+              <div class="rkms__actions">
+                <button type="button" class="rkms__btn rkms__btn--ghost" data-rkms-prev><i
+                    class="ti ti-arrow-right"></i></button>
+                <button type="button" class="rkms__btn rkms__btn--primary" data-rkms-next>
+                  بعدی<i class="ti ti-arrow-left"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- مرحله ۳: درخواست -->
+            <div class="rkms__panel" data-rkms-panel hidden>
+              <h3 class="rkms__panel-title">جزئیات درخواست</h3>
+
+              <div class="rkms__field">
+                <input type="text" id="rkms-subject" name="subject" required placeholder=" ">
+                <label for="rkms-subject">موضوع</label>
+              </div>
+
+              <div class="rkms__field">
+                <textarea id="rkms-desc" name="description" rows="4" required placeholder=" "
+                  maxlength="510"></textarea>
+                <label for="rkms-desc">توضیحات</label>
+              </div>
+
+              <p class="rkms__error" data-rkms-error hidden></p>
+
+              <div class="rkms__actions">
+                <button type="button" class="rkms__btn rkms__btn--ghost" data-rkms-prev>قبلی</button>
+                <button type="submit" class="rkms__btn rkms__btn--primary" data-rkms-submit>ثبت درخواست</button>
+              </div>
+            </div>
+
+          </form>
+
+          <div class="rkms__success" data-rkms-success hidden>
+            <div class="rkms__success-icon">✓</div>
+            <h3>درخواست شما ثبت شد</h3>
+            <p>همکاران ما به‌زودی با شما تماس خواهند گرفت.</p>
+          </div>
+
+        </div>
+
+      </div>
+  </section>
+
+  <!-- ============================================================
+     COMMENTS
+============================================================ -->
+  <section class="section  snap-section" id="comment">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">نظرات مشتریان</span>
+        <h2>مشتری‌ها درباره روبوتا چی می‌گن</h2>
+        <p>پیام‌های واقعی مشتریانی که از روبوتا خرید کردن یا توی دوره‌ها شرکت کردن</p>
+      </div>
+
+      <div class="stage">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="notch"></div>
+            <div class="status-bar">
+              <span>15:47</span>
+              <span class="icons" id="statusIcons"></span>
+            </div>
+            <div class="clock-block">
+              <div class="time">15:47</div>
+              <div class="date">فردا</div>
+            </div>
+
+            <div class="notif-deck" id="notifDeck"></div>
+
+            <div class="bottom-row">
+              <div class="btn-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6">
+                  <path d="M9 2L5 12h5l-1 10 8-13h-5l3-7H9z" />
+                </svg>
+              </div>
+              <div class="btn-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6">
+                  <circle cx="12" cy="13" r="4" />
+                  <path d="M4 8h3l2-2h6l2 2h3v11H4z" />
+                </svg>
+              </div>
+            </div>
+            <div class="home-indicator"></div>
+          </div>
+        </div>
+
+        <div class="quote-panel">
+          <div class="stars" id="quoteStars"></div>
+          <div class="quote-text" id="quoteText"></div>
+          <div class="quote-who">
+            <div>
+              <div class="name" id="quoteName"></div>
+            </div>
+          </div>
+          <div id="dots" class="progress-dot">
+            <span id="progressFill"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     CONTACT
+============================================================ -->
+  <section class="section-alt snap-section" id="contact">
+    <div class="wrap">
+      <div class="reveal">
+        <h2 class="contact-title">هر زمان به راهنمایی نیاز داشتید<span> در کنار شما هستیم</span></h2>
+        <p class="contact-sub">
+          اگر پیش از ثبت درخواست یا هنگام استفاده از خدمات پرسشی داشتید، از طریق راه‌های ارتباطی زیر با ما در تماس
+          باشید.
+        </p>
+
+        <div class="contact-grid">
+          <div class="row">
+            <div class="row-link-contact">
+
+              <!-- phone -->
+              <div class="contact-card">
+                <div class="first-content">
+                  <span><i class="ti ti-phone"></i></span>
+                </div>
+                <div class="second-content">
+                  <span>021-910000</span>
+                </div>
+              </div>
+
+              <!-- email -->
+              <div class="contact-card">
+                <div class="first-content">
+                  <span><i class="ti ti-mail"></i></span>
+                </div>
+                <div class="second-content">
+                  <span>info@robota.ir</span>
+                </div>
+              </div>
+
+              <!-- bale -->
+              <div class="contact-card">
+                <div class="first-content">
+                  <span><i class="ti ti-message"></i></span>
+                </div>
+                <div class="second-content">
+                  <span>robokala@</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- working hours -->
+            <div class="row-text">
+              <span class="row-value">شنبه تا چهارشنبه | ساعت ۹ تا ۱۸ پاسخگوی شما هستیم</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+
+  <!-- ============================================================
+     FOOTER
+============================================================ -->
+  <footer class="footer-cta section" id="footer">
+    <div class="wrap">
+      <div class="footer-box">
+        <div class="chip-wrap">
+          <div class="chip-ring">
+            <div class="logo-contact">
+              <img class="r-static" src="logo/robota-logo/robokala-r-logo-transparent.png" alt="لوگوی روبوکالا">
+              <div class="robot-shift">
+                <div class="robot-breathe">
+                  <img src="logo/robota-logo/rtLogo-solo.png" alt="ربات روبوکالا">
+                  <div class="eyelid left"></div>
+                  <div class="eyelid right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>آماده تبدیل ایده‌های شما به واقعیت هستیم</h2>
+        <p>
+          اگر برای طراحی وب‌سایت یا دریافت مشاوره تخصصی آماده‌اید، تیم
+          روبوتا از اولین گفت‌وگو تا اجرای نهایی در کنار شما خواهد بود
+        </p>
+
+        <span id="footerRequestSlot" class="request-slot">
+          <span class="request-anchor"></span>
+        </span>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div>
+          <strong>Robota Engineering</strong>
+          <span> | دپارتمان مهندسی روبوکالا</span><br>
+          <!-- <small>تمامی حقوق مادی و معنوی این وب‌سایت متعلق به شرکت مهندسی روبوتا است</small> -->
+        </div>
+      </div>
+
+  </footer>
+
+  <a href="#request" id="flyRequestBtn" class="btn btn-primary">
+    ثبت درخواست همکاری
+  </a>
+
+  <script src="js/gsap.js"></script>
+  <script src="js/flip.js"></script>
+  <script src="js/ScrollTrigger.js"></script>
+
+  <!-- global -->
+  <script src="js/global.js"></script>
+
+  <!-- fly-request -->
+  <script src="js/fly-request.js"></script>
+
+  <!-- stat -->
+  <script src="js/stat.js"></script>
+
+  <!-- Tip -->
+  <script src="js/Tip.js"></script>
+
+  <!-- team-section -->
+  <script src="js/team-section.js"></script>
+
+  <!-- form section -->
+  <script src="rk-multistep-form.js"></script>
+  <!-- /////////////////// -->
+
+  <!-- comment -->
+  <script src="js/comment.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+/* ============================================================
+   MOBILE FIXES — رفع مشکلات واقعی ریسپانسیو موبایل
+   این فایل رو بعد از style.css و effect.css لینک کن تا Override بشه:
+
+   <link rel="stylesheet" href="css/effect.css">
+   <link rel="stylesheet" href="css/mobile-fix.css">
+
+   نکته: چون همه‌ی سلکتورها تک‌کلاسی و هم‌سنگین style.css هستن،
+   صرفاً به خاطر اینکه این فایل بعداً لود میشه Override انجام میشه؛
+   نیازی به !important نبود جز چند مورد که با transformهای inline
+   محاسبه‌شده در stack-card تداخل داشت.
+============================================================ */
+
+/* ------------------------------------------------------------
+   1) استک‌کارت‌های «فرایند انجام» (#process)
+   باگ: .stack-list عرض ثابت 450px داره و هیچ override‌ای توی
+   موبایل نداشت → روی گوشی‌های زیر 450px اسکرول افقی می‌ساخت.
+   باگ مهم‌تر: کل جلوه‌ی باز شدن مراحل با :hover فعال می‌شه که
+   روی لمسی عملاً کار نمی‌کنه، یعنی کاربر موبایل فقط کارت اول رو
+   می‌دید و بقیه‌ی مراحل زیرش محو/جمع شده باقی می‌موندن.
+   راه‌حل: زیر 720px افکت 3بعدی/هاور غیرفعال میشه و یک لیست
+   ساده و کاملاً خوانا نمایش داده می‌شه.
+------------------------------------------------------------ */
+@media (max-width: 720px) {
+        #process .stack-list {
+                margin-top: 0;
+        }
+
+        .stack-list,
+        .stack-list:hover {
+                width: 100%;
+                max-width: 480px;
+                perspective: none;
+                transform: none;
+                gap: 14px;
+        }
+
+        .stack-card,
+        .stack-list:hover .stack-card {
+                position: relative;
+                height: auto;
+                min-height: 96px;
+                transform: none !important;
+                opacity: 1 !important;
+                filter: none !important;
+                transition: box-shadow .3s ease;
+        }
+
+        .stack-card:hover {
+                width: 100%;
+        }
+}
+
+@media (max-width: 420px) {
+        .stack-card {
+                gap: 14px;
+                padding: 14px;
+        }
+
+        .step-number {
+                width: 52px;
+                height: 52px;
+                font-size: 18px;
+        }
+
+        .stack-content h3 {
+                font-size: 15.5px;
+        }
+
+        .stack-content p {
+                font-size: 13px;
+                line-height: 1.5;
+                opacity: .75;
+        }
+}
+
+/* ------------------------------------------------------------
+   2) کارت‌های آماری (metric-cards)
+   باگ: .metric-cards__row همیشه margin: -200px 0; داره. توی
+   دسکتاپ این باعث «شناور» بودن عمدی کارت‌ها روی سکشن‌های اطراف
+   می‌شه (ارتفاع ردیف ثابت 300px). ولی توی موبایل که گرید به
+   1/2 ستون می‌شکنه و ارتفاع real content چند برابر می‌شه،
+   همون -200px بالا/پایین باعث می‌شد کارت‌ها زیر سکشن قبلی
+   (خدمات) دفن بشن و سکشن بعدی هم روی کارت آخر بیفته.
+   راه‌حل: overlap به تدریج کم و در موبایل کوچک کاملاً حذف می‌شه.
+------------------------------------------------------------ */
+@media (max-width: 900px) {
+        .metric-cards__row {
+                margin: -70px 0;
+        }
+}
+
+@media (max-width: 760px) {
+        .metric-cards__row {
+                margin: 24px 0;
+        }
+}
+
+@media (max-width: 420px) {
+        .metric-cards__row {
+                margin: 16px 0;
+                padding: 24px 16px;
+        }
+}
+
+/* ------------------------------------------------------------
+   3) بخش تماس (contact-grid / row)
+   باگ: .contact-grid با display:flex نوشته شده بود ولی مدیاکوئری
+   قدیمی روش grid-template-columns می‌ذاشت که روی flex هیچ اثری
+   نداره. همچنین .row (سه‌تا contact-card + ساعت کاری) هیچ
+   flex-wrap‌ای نداشت، پس زیر ~600px فشرده/سرریز می‌شد.
+------------------------------------------------------------ */
+@media (max-width: 860px) {
+        .contact-grid {
+                flex-direction: column;
+        }
+}
+
+@media (max-width: 620px) {
+        .row {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 18px;
+                padding: 22px 18px;
+        }
+
+        .row-link-contact {
+                justify-content: center;
+                flex-wrap: wrap;
+        }
+
+        .row-text {
+                align-items: center;
+                text-align: center;
+        }
+
+        .row-value {
+                text-align: center;
+        }
+}
+
+/* ------------------------------------------------------------
+   4) نوار پیشرفت نظرات مشتریان (#dots.progress-dot)
+   باگ: عرض ثابت 300px داشت؛ چون quote-panel می‌تونه تا 260px هم
+   جمع بشه (min-width:260px)، نوار از کادر بیرون می‌زد.
+------------------------------------------------------------ */
+@media (max-width: 980px) {
+        #dots.progress-dot {
+                width: 100%;
+                max-width: 300px;
+        }
+}
+
+@media (max-width: 340px) {
+        .phone {
+                width: 220px;
+        }
+}
+
+/* ------------------------------------------------------------
+   5) کارت‌های تیم (team-card)
+   باگ: ارتفاع ثابت 200px + overflow:hidden داشت. با فونت/پدینگ
+   پیش‌فرض روی موبایل، متن نقش (team-role) جا نمی‌شد و از پایین
+   کارت قطع می‌شد (نامرئی، نه اسکرول).
+------------------------------------------------------------ */
+@media (max-width: 720px) {
+        .team-stack {
+                min-height: 340px;
+        }
+
+        .team-card {
+                height: auto;
+                min-height: 230px;
+                padding: 22px 20px;
+        }
+
+        .team-role {
+                font-size: 12.5px;
+                line-height: 1.85;
+        }
+}
+
+@media (max-width: 480px) {
+        .team-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+        }
+
+        .team-badge {
+                align-self: flex-end;
+        }
+
+        .team-nav-item {
+                font-size: 15px;
+                padding: 12px 18px 12px 6px;
+        }
+}
+
+/* ------------------------------------------------------------
+   6) اصلاحات عمومی/جزئی
+------------------------------------------------------------ */
+@media (max-width: 480px) {
+        .wrap {
+                padding: 0 16px;
+        }
+
+        .footer-box h2 {
+                font-size: 24px;
+        }
+
+        .footer-box p {
+                font-size: 15px;
+                line-height: 1.8;
+        }
+
+        .contact-title {
+                line-height: 1.35;
+        }
+}
