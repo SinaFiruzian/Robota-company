@@ -3138,7 +3138,7 @@
 
     .rkms__success h3 {
       margin: 0 0 8px;
-      color: #fff;
+      color: var(--rk-blue);
       font-size: 16px;
     }
 
